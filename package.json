@@ -1,0 +1,32 @@
+{
+  "name": "frontend-sandbox",
+  "version": "1.0.0",
+  "description": "A simple sandbox for front-end development with a live view of your code.",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape \"test/**/*.test.js\" | faucet",
+    "build": "browserify js/main.js -o js/bundle.js",
+    "watch": "watchify js/main.js -o js/bundle.js --debug --verbose",
+    "view": "reload -b"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jrleszcz/frontend-sandbox.git"
+  },
+  "author": "John Leszczynski",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jrleszcz/frontend-sandbox/issues"
+  },
+  "homepage": "https://github.com/jrleszcz/frontend-sandbox#readme",
+  "devDependencies": {
+    "browserify": "^12.0.1",
+    "faucet": "0.0.1",
+    "reload": "^0.7.0",
+    "tape": "^4.2.2",
+    "watchify": "^3.5.0"
+  },
+  "dependencies": {
+    "jquery": "^2.1.4"
+  }
+}
