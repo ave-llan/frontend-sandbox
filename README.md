@@ -6,7 +6,7 @@ Clone the repository, deleting .git for clean start.
 
 ```
 git clone https://github.com/jrleszcz/frontend-sandbox.git frontend-sandbox
-rm -r frontend-sandbox/.git
+rm -rf frontend-sandbox/.git
 ```
 
 Move into your new project directory and install packages.
